@@ -1,3 +1,5 @@
+// Zebra Class
+
 #pragma once
 #include "Animal.h"
 

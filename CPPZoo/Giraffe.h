@@ -1,3 +1,5 @@
+// Giraffe Class
+
 #pragma once
 #include "Animal.h"
 

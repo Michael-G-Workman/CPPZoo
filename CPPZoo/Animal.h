@@ -1,10 +1,11 @@
+// Animal Class
+// an abstract base class for all the animal classes that will be derived from this class.
+// make all methods virtual in the event we change the base class methods
+// in the future to be overridden in the derived classes.
+
 #pragma once
 
 #include <string>
-// base class for all the animal classes that will be derived from this class.
-// make all methods virtual in the event we change the base class methods
-// in the future to be overridden in the derived class.
-
 #include <iostream>
 
 using namespace std;

@@ -1,3 +1,5 @@
+// Lion Class
+
 #pragma once
 #include "Animal.h"
 

@@ -1,4 +1,4 @@
-// CPPZoo.cpp
+// CPPZoo
 //
 // by Michael G. Workman
 //
@@ -13,6 +13,7 @@
 #include "Giraffe.h"
 #include "Zebra.h"
 #include "Pangolin.h"
+#include "Caracal.h"
 
 int main()
 {
@@ -52,7 +53,7 @@ int main()
 	zebra2->setAge(1);
 	zebra2->setSex("Female");
 
-	// create the first Pangolin, a 3 year old 10 pound male
+	// create the first Pangolin, a 3 year old 10 pound male adult
 	Pangolin* pangolin1 = new Pangolin();
 	pangolin1->setWeight(10);
 	pangolin1->setAge(3);
@@ -63,6 +64,18 @@ int main()
 	pangolin2->setWeight(1);
 	pangolin2->setAge(1);
 	pangolin2->setSex("Male");
+
+	// create the first Caracal, a 3 year old 35 pound male adult
+	Caracal* caracal1 = new Caracal();
+	caracal1->setWeight(35);
+	caracal1->setAge(3);
+	caracal1->setSex("Male");
+
+	// create the second Caracal, a 1 year old 15 pound female cub
+	Caracal* caracal2 = new Caracal();
+	caracal2->setWeight(15);
+	caracal2->setAge(1);
+	caracal2->setSex("Female");
 
 	// the first lion speaks
 	std::cout << lion1->speak() << "\n\n";
@@ -112,6 +125,18 @@ int main()
 	// get the second Pangolin info
 	std::cout << pangolin2->getAnimalInfo() << "\n\n";
 
+	// the first Caracal speaks
+	std::cout << caracal1->speak() << "\n\n";
+
+	// get the first Caracal info
+	std::cout << caracal1->getAnimalInfo() << "\n\n";
+
+	// the second Caracal speaks
+	std::cout << caracal2->speak() << "\n\n";
+
+	// get the second Caracal info
+	std::cout << caracal2->getAnimalInfo() << "\n\n";
+
 	// delete pointers to objects and set to null
 	delete lion1;
 	lion1 = 0;
@@ -136,5 +161,11 @@ int main()
 
 	delete pangolin2;
 	pangolin2 = 0;
+
+	delete caracal1;
+	caracal1 = 0;
+
+	delete caracal2;
+	caracal2 = 0;
 }
 
