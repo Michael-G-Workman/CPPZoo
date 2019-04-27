@@ -9,6 +9,11 @@
 // This application is freely distributable under terms of the MIT open source license
 
 #include <iostream>
+#include <list>
+#include <algorithm>
+#include <functional>
+#include <vector>
+
 #include "Lion.h"
 #include "Giraffe.h"
 #include "Zebra.h"
@@ -137,6 +142,15 @@ int main()
 	// get the second Caracal info
 	std::cout << caracal2->getAnimalInfo() << "\n\n";
 
+	// create an array of animals for the entire Zoo
+	Animal* const zooAnimals[] = { lion1, lion2, giraffe1, giraffe2, zebra1, zebra2, pangolin1, pangolin2, caracal1, caracal2 };
+
+	// list the animal type for each animal
+	int length = (sizeof(zooAnimals) / sizeof(Animal*));
+	for (int i = 0; i < length; i++) {
+		cout << "Animal #" + std::to_string(i+1) + " Animal Type: " +  zooAnimals[i]->getAnimalType() + "\n";
+	}
+
 	// delete pointers to objects and set to null
 	delete lion1;
 	lion1 = 0;
@@ -167,5 +181,6 @@ int main()
 
 	delete caracal2;
 	caracal2 = 0;
+
 }
 
