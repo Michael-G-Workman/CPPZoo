@@ -81,66 +81,69 @@ int main()
 	caracal2->setWeight(15);
 	caracal2->setAge(1);
 	caracal2->setSex("Female");
-
+	
+	// intro
+	cout << "Welcome to the CPP Zoo!\n\n";
+	
 	// the first lion speaks
-	std::cout << lion1->speak() << "\n\n";
+	cout << lion1->speak() << "\n\n";
 
 	// get the first lion info
-	std::cout << lion1->getAnimalInfo() << "\n\n";
+	cout << lion1->getAnimalInfo() << "\n\n";
 
 	// the second lion speaks
-	std::cout << lion2->speak() << "\n\n";
+	cout << lion2->speak() << "\n\n";
 
 	// get the second lion info
-	std::cout << lion2->getAnimalInfo() << "\n\n";
+	cout << lion2->getAnimalInfo() << "\n\n";
 
 	// the first giraffe bleats
-	std::cout << giraffe1->speak() << "\n\n";
+	cout << giraffe1->speak() << "\n\n";
 
 	// get the first giraffe info
-	std::cout << giraffe1->getAnimalInfo() << "\n\n";
+	cout << giraffe1->getAnimalInfo() << "\n\n";
 
 	// the second giraffe bleats
-	std::cout << giraffe2->speak() << "\n\n";
+	cout << giraffe2->speak() << "\n\n";
 
 	// get the second giraffe info
-	std::cout << giraffe2->getAnimalInfo() << "\n\n";
+	cout << giraffe2->getAnimalInfo() << "\n\n";
 
 	// the first Zebra speaks
-	std::cout << zebra1->speak() << "\n\n";
+	cout << zebra1->speak() << "\n\n";
 
 	// get the first Zebra info
-	std::cout << zebra1->getAnimalInfo() << "\n\n";
+	cout << zebra1->getAnimalInfo() << "\n\n";
 
 	// the second Zebra speaks
-	std::cout << zebra2->speak() << "\n\n";
+	cout << zebra2->speak() << "\n\n";
 
 	// get the second Zebra info
-	std::cout << zebra2->getAnimalInfo() << "\n\n";
+	cout << zebra2->getAnimalInfo() << "\n\n";
 
 	// the first Pangolin speaks
-	std::cout << pangolin1->speak() << "\n\n";
+	cout << pangolin1->speak() << "\n\n";
 
 	// get the first Pangolin info
-	std::cout << pangolin1->getAnimalInfo() << "\n\n";
+	cout << pangolin1->getAnimalInfo() << "\n\n";
 
 	// the second Pangolin speaks
-	std::cout << pangolin2->speak() << "\n\n";
+	cout << pangolin2->speak() << "\n\n";
 
 	// get the second Pangolin info
-	std::cout << pangolin2->getAnimalInfo() << "\n\n";
+	cout << pangolin2->getAnimalInfo() << "\n\n";
 
 	// the first Caracal speaks
-	std::cout << caracal1->speak() << "\n\n";
+	cout << caracal1->speak() << "\n\n";
 
 	// get the first Caracal info
-	std::cout << caracal1->getAnimalInfo() << "\n\n";
+	cout << caracal1->getAnimalInfo() << "\n\n";
 
 	// the second Caracal speaks
-	std::cout << caracal2->speak() << "\n\n";
+	cout << caracal2->speak() << "\n\n";
 
 	// get the second Caracal info
-	std::cout << caracal2->getAnimalInfo() << "\n\n";
+	cout << caracal2->getAnimalInfo() << "\n\n";
 
 	// create an array of animals for the entire Zoo
 	Animal* const zooAnimals[] = { lion1, lion2, giraffe1, giraffe2, zebra1, zebra2, pangolin1, pangolin2, caracal1, caracal2 };
