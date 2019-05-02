@@ -154,6 +154,63 @@ int main()
 		cout << "Animal #" + std::to_string(i+1) + " Animal Type: " +  zooAnimals[i]->getAnimalType() + "\n";
 	}
 
+	// create an STL LIST to hold the animals in the zoo
+	// push the animal objects onto the list
+	list<Animal*> zooAnimalsList;
+	zooAnimalsList.clear();
+	zooAnimalsList.push_back(lion1);
+	zooAnimalsList.push_back(lion2);
+	zooAnimalsList.push_back(giraffe1);
+	zooAnimalsList.push_back(giraffe2);
+	zooAnimalsList.push_back(zebra1);
+	zooAnimalsList.push_back(zebra2);
+	zooAnimalsList.push_back(pangolin1);
+	zooAnimalsList.push_back(pangolin2);
+	zooAnimalsList.push_back(caracal1);
+	zooAnimalsList.push_back(caracal2);
+
+	// intro line
+	cout << "\nZoo Animals List:\n\n";
+
+	// loop through the LIST using an iterator and calling class methods
+	list<Animal*>::iterator listItr;
+	for (listItr = zooAnimalsList.begin(); listItr != zooAnimalsList.end(); listItr++) {
+
+		// call the base class method
+		cout << "Animal Type: " << (*listItr)->getAnimalType() << "\n";
+
+		// call the derived class method
+		cout << (*listItr)->speak() << "\n";
+	}
+
+	// create a dynamic STL VECTOR to hold the animals in the zoo
+	// push the animal objects onto the vector
+	vector<Animal*> zooAnimalsVector;
+	zooAnimalsVector.push_back(lion1);
+	zooAnimalsVector.push_back(lion2);
+	zooAnimalsVector.push_back(giraffe1);
+	zooAnimalsVector.push_back(giraffe2);
+	zooAnimalsVector.push_back(zebra1);
+	zooAnimalsVector.push_back(zebra2);
+	zooAnimalsVector.push_back(pangolin1);
+	zooAnimalsVector.push_back(pangolin2);
+	zooAnimalsVector.push_back(caracal1);
+	zooAnimalsVector.push_back(caracal2);
+
+	// intro line
+	cout << "\nZoo Animals Vector:\n\n";
+
+	// loop through the vector, calling methods
+	for (int i = 0; i < zooAnimalsVector.size(); i++) {
+
+		// call the base class method
+		cout << "Animal Type: " << zooAnimalsVector[i]->getAnimalType() << "\n";
+
+		// call the derived class method
+		cout << zooAnimalsVector[i]->speak() << "\n";
+	}
+
+
 	// delete pointers to objects and set to null
 	delete lion1;
 	lion1 = 0;
