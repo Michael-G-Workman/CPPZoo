@@ -9,3 +9,5 @@ This application demonstrates object oriented software development with the use 
 THis application was created as a Windows Console Application developed with the Visual Studio IDE,
 
 This application is freely distributable under the terms of the MIT open source license.
+
+michael.g.workman@gmail.com
